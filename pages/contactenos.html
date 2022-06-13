@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shouter icon" href="./../favicon.ico" />
+    <link rel="stylesheet" href="./../style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <title>BMsistemas - Quienes Somos</title>
+</head>
+
+<body class="colorFondo">
+    <header class="header">
+        <!--Genero el menu-->
+        <nav class="nav-bar">
+
+            <a href="./../index.html"> <img src="./../img/logo.jpg" alt="Logo de la empresa" class="logo" /></a>
+            <ul class="nav-bar__item">
+                <li class="item"><a href="./../index.html" target="_parent">Home</a></li>
+                <li class="item"><a href="./../pages/quienesSomos.html" target="_parent">Quienes Somos</a></li>
+                <li class="item"><a href="./../pages/servicios.html" target="_parent">Servicios</a></li>
+                <li class="item"><a href="./../pages/contactenos.html" target="_parent">Contactenos</a></li>
+            </ul>
+            </div>
+
+    </header>
+    <main class="main">
+        <article class="main__article">
+            <div class="main__article__div">
+                <div class="div__form">
+
+
+                    <h2>Donde Estamos</h2>
+                    <!--El mapa y el texto debe quedar al costado del formulario-->
+                    <p>Direccion: Av. Bartolome Mitre 2012 </p>
+                    <p>Partido: Avellaneda Provincia: Buenos Aires</p>
+                    <p>Telefono: #################</p>
+                    <p>mail: jbarneau@gmail.com</p>
+
+                    <iframe
+                        src="https://www.google.com.ar/maps/place/Av.+Bartolom%C3%A9+Mitre+2012,+B1873AMG+Avellaneda,+Provincia+de+Buenos+Aires/@-34.6698376,-58.3569634,17z/data=!3m1!4b1!4m5!3m4!1s0x95a33338ac5eb3d7:0x97166dc92e239900!8m2!3d-34.6701758!4d-58.354057"
+                        frameborder="0" ></iframe>
+
+                </div>
+                <div class="div__form">
+                    <form id="enviar">
+                        <h1>Dejenos tu mensaje</h1>
+                        <div>
+                            <label for="Apellido">Apellido</label>
+                            <input type="text" id="Apellido" />
+                        </div>
+                        <div>
+                            <label for="Nombre">Nombre</label>
+                            <input type="text" id="Nombre" />
+                        </div>
+                        <div>
+                            <label for="Email">Email </label>
+                            <input type="email" id="Email" />
+                        </div>
+                        <div>
+                            <label>Seleccione una pais</label>
+                            <select>
+                                <option selected="selected">Seleccione un pais</option>
+                                <option>Argentina</option>
+                                <option>Chile</option>
+                                <option>Uruguay</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Quiere recibir informacion sobre nosotros <input type="checkbox"
+                                    name="aceptar"></label>
+
+                        </div>
+                        <div>
+                            <label>Acepto los terminos y condiciones <input type="checkbox" name="aceptar"
+                                    checked="checked"> </label>
+
+                        </div>
+                        <div>
+                            <label for="Mensaje">Mensaje</label>
+                        </div>
+                        <div>
+                            <textarea rows="10" cols="50" id="Mensaje"></textarea>
+
+                        </div>
+                        <div>
+                            <button type="submit" value="Enviar">Enviar</button>
+                            <button type="reset">Limpiar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </article>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Desarrollado por Barneau Juan Jose</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
