@@ -135,6 +135,10 @@ grid-row-gap:2px;
     width: 100%;
 
 }
+.cards img:hover{
+    transform: scale(0.8,0.8);
+    transition: 0.5s;
+}
 
 
 .div__form{
@@ -273,7 +277,7 @@ grid-row-gap:2px;
         color: blue;
 
     }
-
+    
     .div__form{
         font-family: 'ABeeZee', sans-serif;
         padding: 5px;
