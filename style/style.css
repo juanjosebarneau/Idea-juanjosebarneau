@@ -21,36 +21,38 @@
 }
 
 
-.fontfamily{
+.fontfamily {
     font-family: 'ABeeZee', sans-serif;
-    
-
 }
-.btncard:hover{
-    transform: scale(0.8,0.8);
+.fontfamily p{
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1rem;
+}
+
+.btncard:hover {
+    transform: scale(0.8, 0.8);
     transition: 0.5s;
     color: rgb(248, 9, 9);
 }
 
 .footer {
-    
+
     background-color: #fb8500;
-    left: 0px;
-    bottom: 0px;
-    height: 30px;
-   
+    height: 2rem;
+
 }
-.nav-item a:hover{
+
+.nav-item a:hover {
     background-color: black;
     color: #ffff;
     border-radius: 0.5rem;
     transition: 0.5s;
-    }
-    
-    .color-nav-bar{
-        background-color: #fb8500;
-    }
+}
 
-    .btn-primary{
-        background-color: rgb(40, 247, 178);
-    }
+.color-nav-bar {
+    background-color: #fb8500;
+}
+
+.btn-primary {
+    background-color: rgb(40, 247, 178);
+}

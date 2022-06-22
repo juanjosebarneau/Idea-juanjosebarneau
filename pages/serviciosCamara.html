@@ -5,51 +5,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--pongo el icono en el navegador-->
     <link rel="shouter icon" href="./../favicon.ico" />
     <!-- CSS boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--Importo mi CSS-->
     <link rel="stylesheet" href="./../style/style.css" />
+    <!--Importo la fuente-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
-    <title>BMsistemas - Quienes Somos</title>
+    <title>BMsistemas - Camaras de seguridad</title>
 </head>
 
-<body class="colorFondo">
-    <header class="header">
-        <!--Genero el menu-->
-        <nav class="nav-bar">
+<body >
+     <!--NavBar-->
+     <nav class="navbar navbar-expand-lg color-nav-bar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./../index.html"><img src="./../img/logo.jpg" alt="Logo de la empresa"
+                    class="logo" ; /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <a href="./../index.html"> <img src="./../img/logo.jpg" alt="Logo de la empresa" class="logo" /></a>
-            <ul class="nav-bar__item">
-                <li class="item"><a href="./../index.html" target="_parent">Home</a></li>
-                <li class="item"><a href="./../pages/quienesSomos.html" target="_parent">Quienes Somos</a></li>
-                <li class="item"><a href="./../pages/servicios.html" target="_parent">Servicios</a></li>
-                <li class="item"><a href="./../pages/contactenos.html" target="_parent">Contactenos</a></li>
-            </ul>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./../index.html" target="_parent">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../pages/quienesSomos.html" target="_parent">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../pages/servicios.html" target="_parent">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_parent">Contactenos</a>
+                    </li>
+                </ul>
             </div>
+        </div>
+    </nav>
+   <div class="container-fluid fontfamily">
 
-    </header>
-    <main class="main">
-        <article class="main__article">
-            <h1>INSTALACION DE CAMARAS</h>
-            </br>
-                <div class="main__article__div1">
+       
+       <main class="row">
+           <article class="col-12">
+               <h1 class="h1 text-center mt-3 mb-3">INSTALACION DE CAMARAS</h>
+               
+               <div class="row mt-3 mb-3">
+                <div class="col-sm-1 col-mb-6 col-lg-6">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quas, nihil nobis eligendi
                         exercitationem nulla dolorum non architecto ex repellendus, itaque provident fugiat magni minus
                         aspernatur, commodi consectetur. Officiis, vel!</p>
-                    <img src="./../img/imagenCamaras.jpg" alt="iMAGENE DE CAMARAS" />
+                    
+                    
+                        
+                    </div>
+                    <div class="col-sm-1 col-mb-6 col-lg-6">
+
+                        <img class="container-fluid" src="./../img/imagen10.jpg" alt="iMAGENE DE CAMARAS" />
+                    </div>
+                    </div>
+                    
+                    
+                </article>
+            </main>
+            <footer class="row">
+                <div class="col-12 footer text-center">
+                    <p>Desarrollado por Barneau Juan Jose</p>
                 </div>
-
-
-        </article>
-    </main>
-    <footer>
-        <div class="footer text-center container-fluid ">
-            <p>Desarrollado por Barneau Juan Jose</p>
+            </footer>
         </div>
-    </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

@@ -5,18 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--pongo el icono en el navegador-->
+
     <link rel="shouter icon" href="./../favicon.ico" />
-   <!-- CSS boostrap -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-   integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 
+    <!-- CSS boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--Importo mi CSS-->
     <link rel="stylesheet" href="./../style/style.css" />
+    <!--Importo la fuente-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
     <title>BMsistemas - Quienes Somos</title>
 </head>
 
-<body class=" container-fluid fontfamily">
+<body>
     <nav class="navbar navbar-expand-lg color-nav-bar">
         <div class="container-fluid">
             <a class="navbar-brand" href="./../index.html"><img src="./../img/logo.jpg" alt="Logo de la empresa"
@@ -31,7 +35,7 @@
                         <a class="nav-link" aria-current="page" href="./../index.html" target="_parent">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#" target="_parent">Quienes Somos</a>
+                        <a class="nav-link" href="#" target="_parent">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./../pages/servicios.html" target="_parent">Servicios</a>
@@ -43,34 +47,59 @@
             </div>
         </div>
     </nav>
-    <header >
-        
-    </header>
-    <main>
-        <article class="col-mb-6">
-            <h3>Historia</h3>
-            <div >
-                <!--la imagen tiene que quedar al costado del texto-->
-                <p>En 2001 Cristian y Juan Jose se cruzaron y tubieron la idea de generar esta empresa....... </p>
-                <img src="./../img/imagen2.jpg"  alt="imagen de historia" />
+    <div class="container-fluid fontfamily">
+        <main class="row">
+            <article class="col-12">
+                <div class="row mb-3 mt-3">
+
+                    <h3 class="h1 text-center">Historia</h3>
+                    <div class="col-sm-1 col-mb-6 col-lg-6">
+                        <!--la imagen tiene que quedar al costado del texto-->
+                        <p>En 2001 Cristian y Juan Jose se cruzaron y tubieron la idea de generar una empresa para
+                            brindar
+                            soluciones informaticas a sus clientes.
+                            Al principio los amigos los sugerian y contrataban, su flexibilidad y pensamiento hizo que
+                            pensaran en crecer, asi es como crearon BMsistemas.
+                            En la empresa se piensa que los clientes son amigos y hay que acompañarlos para crear nuevas
+                            herramientas que ayuden a crecer.</p>
+                    </div>
+                    <div class="col-sm-1 col-mb-6 col-lg-6">
+
+                        <img class="container-fluid" src="./../img/imagen2.jpg" alt="imagen de historia" />
+                    </div>
+                </div>
+                <div class="row mb-3">
+
+                    <h3 class="h1 text-center">Mision</h3>
+                    <div class="col-sm-1 col-mb-6 col-lg-6 ">
+                        <img class="container-fluid" src="./../img/imagen2.jpg" alt="imagen de historia" />
+                    </div>
+                    <div class="ccol-sm-1 col-mb-6 col-lg-6 ">
+                        <p>La empresa quiere ser confiable y que los clientes dejen de verla como una empresa mas, en
+                            BMsistemas queremos que nos consideren sus aliados, tenemos la conviccion de que si a ud le
+                            va bien a nosotros tambien </p>
+
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <h3 class="h1 text-center">Vision</h3>
+                    <div class="col-sm-1 col-mb-6 col-lg-6 ">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nemo placeat atque animi facilis corrupti debitis quam sapiente earum mollitia esse magni voluptates, minus inventore dolorem non, aliquam at? Natus!</p>
+                    </div>
+                    <div class="col-sm-1 col-mb-6 col-lg-6 ">
+                        <img class="container-fluid" src="./../img/imagen2.jpg" alt="imagen de historia" />
+
+                    </div>
+                </div>
+
+            </article>
+        </main>
+        <footer class="row">
+            <div class="col-12 footer text-center">
+                <p>Desarrollado por Barneau Juan Jose</p>
             </div>
-            <h3>Mision</h3>
-            <div >
-                <img src="./../img/imagen2.jpg"  alt="imagen de historia" />
-                <p>Aca se escribe en detalle la Mision de la empresa</p>
-            </div>
-            <h3>Vision</h3>
-            <div >
-                <p>Aca se escribe en detalle la Vision de la empresa</p>
-                <img src="./../img/imagen2.jpg"  alt="imagen de historia" />
-            </div>
-        </article>
-    </main>
-    <footer>
-        <div class="footer text-center container-fluid ">
-            <p>Desarrollado por Barneau Juan Jose</p>
-        </div>
-    </footer>
+        </footer>
+    </div>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

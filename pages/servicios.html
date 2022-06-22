@@ -5,18 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--pongo el icono en el navegador-->
     <link rel="shouter icon" href="./../favicon.ico" />
     <!-- CSS boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--Importo mi CSS-->
     <link rel="stylesheet" href="./../style/style.css" />
+    <!--Importo la fuente-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
     <title>BMsistemas - Quienes Somos</title>
 </head>
 
-<bodyl class=" container-fluid fontfamily">
+<body>
+    <!--NavBar-->
     <nav class="navbar navbar-expand-lg color-nav-bar">
         <div class="container-fluid">
             <a class="navbar-brand" href="./../index.html"><img src="./../img/logo.jpg" alt="Logo de la empresa"
@@ -35,7 +39,7 @@
                         <a class="nav-link" href="./../pages/quienesSomos.html" target="_parent">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./../pages/servicios.html" target="_parent">Servicios</a>
+                        <a class="nav-link" href="./../pages/servicios.html" target="_parent">Servicios</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./../pages/contactenos.html" target="_parent">Contactenos</a>
@@ -44,61 +48,62 @@
             </div>
         </div>
     </nav>
-      
-        <article>
-            <div>
+    <div class="container-fluid fontfamily">
+        <main class="row">
+            <article class="col-12">
                 <h2 class="h3">Seleccione uno de nuestos servicios</h2>
 
                 <div class="row fontfamily justify-content-around">
                     <div class="card mb-3" style="width: 18rem;">
                         <img src="./../img/imagen4.jpg" class="card-img-top" alt="Desarrollo de software">
                         <div class="card-body">
-                          <h5 class="card-title">Software</h5>
-                          <p class="card-text">Nos especializamos en desarrolar todas tus ideas para potenciar tu organizacion.</p>
-                          <div class="text-center btncard">
-                              <a href="./../pages/serviciosDesarrollo.html" class="btn btn-primary">Visitenos</a>
+                            <h5 class="card-title">Software</h5>
+                            <p class="card-text">Nos especializamos en desarrolar todas tus ideas para potenciar tu
+                                organizacion.</p>
+                            <div class="text-center btncard">
+                                <a href="./../pages/serviciosDesarrollo.html" class="btn btn-primary">Visitenos</a>
                             </div>
                         </div>
-                      </div>
-                      <div class="card mb-3" style="width: 18rem;">
+                    </div>
+                    <div class="card mb-3" style="width: 18rem;">
                         <img src="./../img/imagen3.jpg" class="card-img-top" alt="Redes estructuradas">
                         <div class="card-body">
-                          <h5 class="card-title">Redes LAN</h5>
-                          <p class="card-text">Desarrllamos y mantenemos sus redes lan para una mejor comunicacion.</p>
-                          <div class="text-center btncard">
-                
-                              <a href="./..pages/serviciosRed.html" class="btn btn-primary">Visitrenos</a>
+                            <h5 class="card-title">Redes LAN</h5>
+                            <p class="card-text">Desarrllamos y mantenemos sus redes lan para una mejor comunicacion.
+                            </p>
+                            <div class="text-center btncard">
+
+                                <a href="./../pages/serviciosRed.html" class="btn btn-primary">Visitrenos</a>
                             </div>
                         </div>
-                      </div>
-                      <div class="card mb-3" style="width: 18rem;">
+                    </div>
+                    <div class="card mb-3" style="width: 18rem;">
                         <img src="./../img/imagen11.jpg" class="card-img-top" alt="Instalacion de Camaras de seguridad">
                         <div class="card-body">
-                          <h5 class="card-title">Camaras de Seguridad</h5>
-                          <p class="card-text">Instalamos y configuramos camaras de seguridad para que monitoreo.</p>
-                          <div class="text-center btncard">
-                
-                              
-                              <a href="./../pages/serviciosRed.html" class="btn btn-primary" >Visitenos</a>
+                            <h5 class="card-title">Camaras de Seguridad</h5>
+                            <p class="card-text">Instalamos y configuramos camaras de seguridad para que monitoreo.</p>
+                            <div class="text-center btncard">
+                               <a href="./../pages/serviciosCamara.html" class="btn btn-primary">Visitenos</a>
                             </div>
-                                  </div>
-                      </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-        </article>
-    
-    <footer>
-        <div class="footer text-center container-fluid ">
-            <p>Desarrollado por Barneau Juan Jose</p>
-        </div>
-    </footer>
+
+            </article>
+        </main>
+        <footer class="row">
+            <div class="col-12 footer text-center ">
+                <p>Desarrollado por Barneau Juan Jose</p>
+            </div>
+        </footer>
+    </div>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 
 
-    </body>
+</body>
 
 </html>
