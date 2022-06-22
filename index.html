@@ -2,75 +2,150 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--pongo el icono en el navegador-->
-    <link rel="shouter icon" href="./favicon.ico" />
-    <!--Importo mi CSS-->
-    <link rel="stylesheet" href="./style/style.css"  type="text/css"/>
-    <!--Importo la fuente-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
-    <title>BMsistemas - Home </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--pongo el icono en el navegador-->
+  <link rel="shouter icon" href="./favicon.ico" />
+  <!-- CSS boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!--Importo mi CSS-->
+  <link rel="stylesheet" href="./style/style.css" type="text/css" />
+  <!--Importo la fuente-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+  <title>BMsistemas - Home </title>
 </head>
-<!--Uso un color de fondo par ala paguinza-->
 
-<body class="colorFondo">
-    <!--Un color y marquenes para el resto del contenedor-->
-    <header class="header">
-        <!--Genero el menu-->
+<body>
+  <!--NavBar-->
+  <nav class="navbar navbar-expand-lg color-nav-bar position-sticky">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="./img/logo.jpg" alt="Logo de la empresa" class="logo"
+          ; /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <nav class="nav-bar">
-            <a href="./index.html"><img src="./img/logo.jpg" alt="Logo de la empresa" class="logo" /></a>
-            <ul class="nav-bar__item">
-                <li class="item"><a href="./index.html" target="_parent">Home</a></li>
-                <li class="item"><a href="./pages/quienesSomos.html" target="_parent">Quienes Somos</a></li>
-                <li class="item"><a href="./pages/servicios.html" target="_parent">Servicios</a></li>
-                <li class="item"><a href="./pages/contactenos.html" target="_parent">Contactenos</a></li>
-            </ul>
-
-        </nav>
-    </header>
-    <main class="main">
-        <!--Carrucel de imagenes de trabajos realizados-->
-        <div class="main__carrucel">
-            <img src="./img/imagen1.jpg" alt="carrucel de imagenes">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html" target="_parent">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/quienesSomos.html" target="_parent">Quienes Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/servicios.html" target="_parent">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/contactenos.html" target="_parent">Contactenos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid fontfamily">
+    <header class="row">
+      <div class="col-12">
+        <!--Carrucel de imagenes-->
+        <!--Falta copnseguir mejores imagenes-->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/imagen2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/imagen3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/imagen4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/imagen9.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <!--Pequeño texto de presentacion-->
-        <article class="main__article">
-            <div>
-                <p>Somos una empresa que se dedica a soluciones informaticas, contamos con un planten de
-                    profecionales que se encuentran
-                    dispuestos a colaborar y desarrollar todas sus soluciones</p>
-                <p>Estos son nuestros servicios:</p>
-            </div>
-            <!--Card con los 3 servicios a -->
-            <div class="cards">
-                <div class="animacion">
-                    <a href="./pages/serviciosRed.html" target="_parent"><img src="./img/imagenRedes.jpg"
-                            alt="imagen redes" /> </a>
-                </div>
-                <div>
-                    <a href="./pages/serviciosCamara.html" target="_parent"><img src="./img/imagenCamaras.jpg"
-                            alt="imagen camaras" /> </a>
-                </div>
-                <div>
-                    <a href="./pages/serviciosDesarrollo.html" target="_parent"><img src="./img/software.jpg"
-                            alt="imagen software" /> </a>
-                </div>
-            </div>
 
-        </article>
+      </div>
+
+    </header>
+    <main class="row">
+
+      <article class="col-12">
+        <div>
+          <h3 class="h3 text-center mb-3 mt-2">Quienes somos</h3>
+          <p>Somos una empresa que se dedica a soluciones informaticas, contamos con colaboradores profecionales que
+            se encuentran
+            dispuestos a ayudarlos con todo lo que ud necesita, no dude en llamarnos</p>
+          <h4 class="h4">Estos son nuestros servicios:</p>
+        </div>
+        <div class="row fontfamily justify-content-around">
+          <div class="card mb-3" style="width: 18rem;">
+            <img src="./img/imagen4.jpg" class="card-img-top" alt="Desarrollo de software">
+            <div class="card-body">
+              <h5 class="card-title">Software</h5>
+              <p class="card-text">Nos especializamos en desarrolar todas tus ideas para potenciar tu organizacion.
+              </p>
+              <div class="text-center btncard">
+                <a href="./pages/serviciosDesarrollo.html" class="btn btn-primary">Visitenos</a>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="width: 18rem;">
+            <img src="./img/imagen3.jpg" class="card-img-top" alt="Redes estructuradas">
+            <div class="card-body">
+              <h5 class="card-title">Redes LAN</h5>
+              <p class="card-text">Desarrllamos y mantenemos sus redes lan para una mejor comunicacion.</p>
+              <div class="text-center btncard">
+
+                <a href="./pages/serviciosRed.html" class="btn btn-primary">Visitrenos</a>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="width: 18rem;">
+            <img src="./img/imagen11.jpg" class="card-img-top" alt="Instalacion de Camaras de seguridad">
+            <div class="card-body">
+              <h5 class="card-title">Camaras de Seguridad</h5>
+              <p class="card-text">Instalamos y configuramos camaras de seguridad para que monitoreo.</p>
+              <div class="text-center btncard">
+
+
+                <a href="./pages/serviciosCamara.html" class="btn btn-primary">Visitenos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
 
     </main>
-    <footer>
-        <div class="footer">
-            <p>Desarrollado por Barneau Juan Jose</p>
-        </div>
+    <footer class="row">
+      <div class="col-12 footer text-center">
+        <p>Desarrollado por Barneau Juan Jose</p>
+      </div>
     </footer>
 
+
+  </div>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
