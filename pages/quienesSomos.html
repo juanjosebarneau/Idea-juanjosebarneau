@@ -13,6 +13,8 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!--Importo mi CSS-->
     <link rel="stylesheet" href="./../style/style.css" />
+    <!--Iconos de boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <!--Importo la fuente-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +23,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg color-nav-bar">
+    <nav class="navbar navbar-expand-lg color-nav-bar sticky-lg-top sticky-xl-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./../index.html"><img src="./../img/logo.jpg" alt="Logo de la empresa"
+            <a class="navbar-brand" href="./../index.html"><img src="./../img/logo.png" alt="Logo de la empresa"
                     class="logo" ; /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,17 +55,18 @@
                 <div class="row mb-3 mt-3">
 
                     <h3 class="h1 text-center">Historia</h3>
-                    <div class="col-sm-1 col-mb-6 col-lg-6">
+                    <div class="col-lg-6 col-xl-6">
                         <!--la imagen tiene que quedar al costado del texto-->
-                        <p>En 2001 Cristian y Juan Jose se cruzaron y tubieron la idea de generar una empresa para
-                            brindar
-                            soluciones informaticas a sus clientes.
-                            Al principio los amigos los sugerian y contrataban, su flexibilidad y pensamiento hizo que
-                            pensaran en crecer, asi es como crearon BMsistemas.
-                            En la empresa se piensa que los clientes son amigos y hay que acompañarlos para crear nuevas
-                            herramientas que ayuden a crecer.</p>
+                        <p>En 2001 Cristian y Juan Jose se cruzaron y tuvieron la idea de generar una empresa para
+                            brindar soluciones informáticas a sus clientes. </p>
+                        <p>Al principio los amigos los sugerían y contrataban, su flexibilidad y pensamiento hizo que
+                            pensaran en crecer, asi es como crearon BMsistemas.</p>
+                        <p>Tenemos la idea que nuestros clientes cumplen un rol de aliados, lo que nos permite ayudarlos
+                            y comprender su necesidades y buscar la mejor solución al menor precio, esto se logra por la
+                            historia de la empresa y como la pensaron desde sus orígenes.</p>
+
                     </div>
-                    <div class="col-sm-1 col-mb-6 col-lg-6">
+                    <div class="col-lg-6 col-xl-6">
 
                         <img class="container-fluid" src="./../img/imagen2.jpg" alt="imagen de historia" />
                     </div>
@@ -71,22 +74,33 @@
                 <div class="row mb-3">
 
                     <h3 class="h1 text-center">Mision</h3>
-                    <div class="col-sm-1 col-mb-6 col-lg-6 ">
+                    <div class="col-lg-6 col-xl-6 ">
                         <img class="container-fluid" src="./../img/imagen2.jpg" alt="imagen de historia" />
                     </div>
-                    <div class="ccol-sm-1 col-mb-6 col-lg-6 ">
-                        <p>La empresa quiere ser confiable y que los clientes dejen de verla como una empresa mas, en
-                            BMsistemas queremos que nos consideren sus aliados, tenemos la conviccion de que si a ud le
-                            va bien a nosotros tambien </p>
+                    <div class="col-lg-6 col-xl-6">
+                        <p>La empresa quiere ser la más confiable en el mercado y generar vínculos fuertes con quienes
+                            nos elijen par mejorar y desarrollar sus ideas. </p>
+                        <p>En Bmsistemas estamos listos para ayudarlos a cumplir sus objetivos, tenemos la convicción de
+                            que nuestros clientes no son simplemente clientes, son aliados y amigos, esto nos permite
+                            crecer juntos en la mejora continua. </p>
+                        <p>Somos consciente que si a quienes nos elijen cumplen con sus desafíos nos recomendaran con
+                            sus conocidos y esto hace crecer la red de confianza que deseamos armar. </p>
+
 
                     </div>
                 </div>
                 <div class="row mb-3">
                     <h3 class="h1 text-center">Vision</h3>
-                    <div class="col-sm-1 col-mb-6 col-lg-6 ">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nemo placeat atque animi facilis corrupti debitis quam sapiente earum mollitia esse magni voluptates, minus inventore dolorem non, aliquam at? Natus!</p>
+                    <div class="col-lg-6 col-xl-6">
+                        <p>La visión de la empresa está atada a la historia y misión. </p>
+                        <p>Queremos poder incorporar nuevos clientes (“AMIGOS”) que nos permita generar una red de
+                            confianza y conocimiento. </p>
+                        <p>Esta RED nos permite crear nuevas herramientas que no solo le puede solucionar y mejorar los
+                            procesos de una empresa, sino que la podemos compartir con el resto de nuestros clientes
+                            para mejorar la experiencia. </p>
+
                     </div>
-                    <div class="col-sm-1 col-mb-6 col-lg-6 ">
+                    <div class="col-xl-6 col-lg-6 ">
                         <img class="container-fluid" src="./../img/imagen2.jpg" alt="imagen de historia" />
 
                     </div>
@@ -94,11 +108,12 @@
 
             </article>
         </main>
-        <footer class="row">
+        <footer class="row fixed-bottom">
             <div class="col-12 footer text-center">
-                <p>Desarrollado por Barneau Juan Jose</p>
+              <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
             </div>
-        </footer>
+          </footer>
     </div>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
