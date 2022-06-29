@@ -1,95 +1,84 @@
-/*reseteo todo*/
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/*color de fondo de la pague*/
 .colorFondo {
-    background-color: #ffff;
+  background-color: white;
 }
-
-
 
 .logo {
-    width: 5rem;
-    height: auto;
-    
+  width: 5rem;
+  height: auto;
 }
-
 
 .fontfamily {
-    font-family: 'ABeeZee', sans-serif;
+  font-family: "ABeeZee", sans-serif;
 }
-
 .fontfamily p {
-    font-family: 'ABeeZee', sans-serif;
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .btncard:hover {
-    transform: scale(0.8, 0.8);
-    transition: 0.5s;
-    color: rgb(248, 9, 9);
+  transform: scale(0.8, 0.8);
+  transition: 0.5s;
+  color: rgb(248, 9, 9);
 }
 
 .footer {
-    width: 100%;
-    height: 2rem;
-    background-color: #fb8500;
-    display: flex;
-    justify-content: center;
-
-
-}
-.anchofooter{
-    margin-top:10px;
-}
-.redes{
-    display: inline;
-}
-.bi-facebook{
-text-align: center;
-margin-left: 5px;
-margin-right: 5px;
-color: #FFF;
-}
-.bi-instagram{
-    text-align: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    color: #FFF;
-    }
-
-.nav-item a:hover {
-    background-color: black;
-    color: #ffff;
-    border-radius: 0.5rem;
-    transition: 0.5s;
+  width: 100%;
+  height: 2rem;
+  background-color: #fb8500;
+  display: flex;
+  justify-content: center;
 }
 
-.color-nav-bar {
-    background-color: #fb8500;
+.anchofooter {
+  margin-top: 10px;
 }
 
-.btn-primary {
-    background-color: rgb(40, 247, 178);
+.redes {
+  display: inline;
+}
+
+.bi-facebook {
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #FFF;
+}
+
+.bi-instagram {
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #FFF;
 }
 
 .whatsapp {
-    position: fixed;
-    width: 3rem;
-    height: 3rem;
-    bottom: 0.5rem;
-    right: 0.5rem;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 2rem;
-    z-index: 100;
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2rem;
+  z-index: 100;
 }
 
 .whatsapp-icon {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
+
+.nav-item a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+
+.color-nav-bar {
+  background-color: #fb8500;
+}
+
+.btn-primary {
+  background-color: rgb(40, 247, 178);
+}/*# sourceMappingURL=style.css.map */
