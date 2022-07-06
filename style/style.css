@@ -36,18 +36,15 @@
   display: inline;
 }
 
-.bi-facebook {
+.boton-redes, .bi-instagram, .bi-facebook {
   text-align: center;
   margin-left: 5px;
   margin-right: 5px;
   color: #FFF;
 }
 
-.bi-instagram {
-  text-align: center;
-  margin-left: 5px;
-  margin-right: 5px;
-  color: #FFF;
+.bi-facebook {
+  color: #3255f3;
 }
 
 .whatsapp {
