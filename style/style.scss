@@ -1,5 +1,9 @@
 @import "./fuente";
 @import "./colores";
+@import "./margenes";
+@import "./mapa";
+@import "./mixis";
+
 
 .colorFondo {
     background-color: $colorFondo;
@@ -18,72 +22,74 @@
         font-size: 1rem;
     }
 }
+
 .btncard {
-    &:hover{
+    &:hover {
         transform: scale(0.8, 0.8);
-    transition: 0.5s;
-    color:$colorBtnHover;
+        transition: 0.5s;
+        color: $colorBtnHover;
     }
 }
+
 .footer {
-    width: 100%;
-    height: 2rem;
-    background-color: #fb8500;
-    display: flex;
-    justify-content: center;
+@include footerMixin;
 
 
 }
-.anchofooter{
-    margin-top:10px;
+
+.anchofooter {
+    margin-top: $marginTop;
 }
-.redes{
+
+.redes {
     display: inline;
 }
-.bi-facebook{
-text-align: center;
-margin-left: 5px;
-margin-right: 5px;
-color: $colorIconoredes;
+
+.bi-facebook {
+    text-align:  map-get($boton-redes ,alinacion );
+    margin-left:  map-get($boton-redes ,margenIzquierdo );
+    margin-right:  map-get($boton-redes , margenDerecho );
+       color: map-get($boton-redes , colorFacebook );
 }
-.bi-instagram{
+
+.bi-instagram {
+    @extend .bi-facebook;
+    color: map-get($boton-redes , colorIntagram );
+}
+
+.whatsapp {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    background-color: $colorIconoWhatsApp;
+    color: $colorIconoredes;
+    border-radius: 50%;
     text-align: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    color:$colorIconoredes;
-    }
-    .whatsapp {
-        position: fixed;
-        width: 3rem;
-        height: 3rem;
-        bottom: 0.5rem;
-        right: 0.5rem;
-        background-color: $colorIconoWhatsApp;
-        color: $colorIconoredes;
-        border-radius: 50%;
-        text-align: center;
-        font-size: 2rem;
-        z-index: 100;
-    }
-    
-    .whatsapp-icon {
-        margin-top: 1rem;
-    }
-    .nav-item{
-        a{
-            &:hover{
-                background-color:$backGroumColor;
-    color:$colorFondo;
-    border-radius: 0.5rem;
-    transition: 0.5s;
-            }
+    font-size: 2rem;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 1rem;
+}
+
+.nav-item {
+    a {
+        &:hover {
+            background-color: $backGroumColor;
+            color: $colorFondo;
+            border-radius: 0.5rem;
+            transition: 0.5s;
         }
     }
-    .color-nav-bar {
-        background-color:$colorNavBar;
-    }
-    
-    .btn-primary {
-        background-color: $btnPrimary;
-    }
-    
+}
+
+.color-nav-bar {
+    background-color: $colorNavBar;
+}
+
+.btn-primary {
+    background-color: $btnPrimary;
+}
