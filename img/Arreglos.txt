@@ -1,0 +1,3 @@
+Se modifico la meta etiqueta en las paginas
+Se verifico las etiquetas semánticas
+Se verifico los H para los títulos
