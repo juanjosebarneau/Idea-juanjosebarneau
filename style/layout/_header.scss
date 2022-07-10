@@ -1,0 +1,19 @@
+.logo {
+    width: 5rem;
+    height: auto;
+
+}
+.nav-item {
+    a {
+        &:hover {
+            background-color: $backGroumColor;
+            color: $colorFondo;
+            border-radius: 0.5rem;
+            transition: 0.5s;
+        }
+    }
+}
+
+.color-nav-bar {
+    background-color: $colorNavBar;
+}
