@@ -1,0 +1,22 @@
+.redes {
+    display: inline;
+}
+
+.bi-facebook {
+    text-align:  map-get($boton-redes ,alinacion );
+    margin-left:  map-get($boton-redes ,margenIzquierdo );
+    margin-right:  map-get($boton-redes , margenDerecho );
+       color: map-get($boton-redes , colorFacebook );
+}
+
+.bi-instagram {
+    @extend .bi-facebook;
+    color: map-get($boton-redes , colorIntagram );
+}
+
+
+
+
+.btn-primary {
+    background-color: $btnPrimary;
+}
