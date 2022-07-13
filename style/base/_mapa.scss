@@ -1,9 +1,11 @@
+@import "./margenes";
+@import "./colores";
 $boton-redes:(
 
     alinacion: center,
    margenDerecho: $marginLeft,
     margenIzquierdo: $marginRight,
     colorIntagram: $colorIconoredes,
-    colorFacebook:$coloIconoredes2,
+    colorFacebook:$colorIconoredesDos,
 
 )
